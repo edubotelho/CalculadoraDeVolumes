@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculando Volume</title>
+</head>
+<body>
+    <article id="article-prisma">
+
+        <h1>Calculando volumes de Prismas</h1>
+
+        <p> Os prismas são sólidos geométricos cujas faces laterais são paralelogramos que possuem duas bases poligonais congruentes e paralelas. O volume dos prismas é uma forma de mensurar a quantidade de espaço ocupada por eles a partir de algumas de suas medidas. O volume também é conhecido como capacidade.
+
+        A fórmula usada para calcular o volume dos prismas é a seguinte:</br></br>
+        
+        V = AB·h"</br></br>
+
+        o valor de AB é calculado da seguinte forma</br></br>
+
+        AB = A(largura) · B(comprimento)
+        </p>
+
+        <!--<p>Selecione a medida: <label id="medidaCm">Cm²<input checked name="radiomedidas" type="radio"></label><label id="medidaM">m²<input name="radiomedidas" type="radio"></label></p>-->
+    </article>
+    <section id="volume-prisma">
+
+        <h2>Calculadora de Volume</h2>
+
+        <div id="valores">
+           <input id="valorA" placeholder="Valor da Largura(A)" type="number">
+            
+            <input id="valorB" placeholder="Valor do Comprimento(B)" type="number">
+
+           <input id="valorh" placeholder="Valor da Altura(C)"  type="number">
+            
+
+        </div>
+        <input id="botao" type="button" value="Enviar" onclick="calculate()">
+        <div id="res">
+        
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
