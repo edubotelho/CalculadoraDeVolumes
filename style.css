@@ -4,46 +4,71 @@
 
 }
 
+:root{
+    --corPrincipal:#2ae711c9;
+    -corsecundaria:#303131c5;
+    --corActive:#28be1485;
+}
+
+@font-face {
+    font-family: 'calculaterFont';
+    src: url('Calculator.ttf')format('truetype');
+}
+
 body{
-    background-color:#1c1d1f;
+    background-image: linear-gradient(to bottom,#1c1d1f 60%,#1e351f);
     color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
     gap: 2.3em
 }
+.box1{
+    display: flex;
+
+    
+}
 
 #article-prisma{
-    max-width: 650px;
-    padding: 15px;
-    font-size: 18px;
+    max-width: 50%;
+    margin: 2% 12% 5% 2%;
+    font-size: 25px;
     color:rgba(201, 201, 201, 0.918) ;
 }
 
 #article-prisma p {
-    padding: 10px 0 0 10px;
+    padding: 10px 0 0 15px;
 }
 
 #article-prisma h1{
-    
-    margin: 18px 0 8px 18px;
-    color: #e28941;
+    font-family: 'calculaterFont',Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin: 18px 0 8px 15px;
+    color: var(--corPrincipal);
+    text-shadow: 0.5px 0.5px 10px var(--corPrincipal);
     text-transform: uppercase;
 }
 
 #volume-prisma{
+    background-color: #1c1d1f;
     display: flex;
     flex-direction:column;
     gap: 1.5em;
-    max-width: 390px;
-    margin: 0 0 15px 0;
+    max-width: 33%;
+    margin: 5% 0 1% -2%;
 
-    border: 2px solid #1c426e86;
+    border: 2px solid #f0f8ffb6;
     border-radius: 5px;
+    box-shadow: 1px 1px 15px black;
 }
 
 #volume-prisma h2{
+    font-family: 'calculaterFont',Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: var(--corPrincipal);
+    text-shadow: 1px 1px 10px var(--corPrincipal);
     padding: 1.2em 0 2px 0;
     text-align: center;
     text-transform: uppercase;
@@ -63,33 +88,43 @@ body{
 #valores input{
     display: inline;
     height: 50px;
+    font-size: 20px;
+    font-family: 'calculaterFont',Arial,sans-serif;
+    color: var(--corPrincipal);
+    text-shadow: 0.5px 0.5px 10px var(--corPrincipal);
+    padding-left: 10px;
     max-width: 355px;
     background-color: #303131c5;
-    border: 2px solid #24538a86;
+    border: 2px solid #f0f8ffb6;
 }
 
 #valores>input::placeholder{
     padding-left:18px;
-    color:#085399;
+    font-family: 'calculaterFont',arial,sans-serif;
+    font-size: 22px;
+    color:var(--corPrincipal);
+    text-shadow:0.2px 0.2px 10px var(--corPrincipal);
 
 }
 #botao{
-  
     cursor: pointer;
     margin: auto;
     width: 90px;
     height: 40px;
-    background-color: #ee842efd;
+    background-color:#414141ad;
     border-radius: 7px;
-    border: none;
-    font-size: 18px;
-    color:#202024;
+    border: 1.5px solid #f0f8ffb6;
+    font-size: 20px;
+    font-family: 'calculaterFont',Arial,sans-serif;
+    text-transform: uppercase;
+    color:var(--corPrincipal);
+    text-shadow:1px 1px 8px var(--corPrincipal);
     transition: 0.1s;
 }
 
 #botao:active{
-    background-color: #ee791998;
-    color: rgba(172, 172, 172, 0.733);
+    background-color: var(--corActive);
+    color: #000000;
     transition: 0.1s;
 }
 
@@ -101,5 +136,6 @@ body{
     padding: 25px 0 0 0;
     text-align: center;
     border-radius: 10px;
-    border: 2px solid #085399;
+    border: 2px solid #f0f8ffb6;
 }
+
