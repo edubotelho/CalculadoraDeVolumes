@@ -92,7 +92,7 @@ body{
     color: var(--corPrincipal);
     text-shadow: 0.5px 0.5px 10px var(--corPrincipal);
     padding-left: 10px;
-    width: 329px;
+    min-width: 310px;
     background-color: #303131c5;
     border: 2px solid #f0f8ffb6;
 }
@@ -142,11 +142,12 @@ body{
     .box1{
         flex-direction: column;
         height: auto;
+        max-width: 100%;
     }
 
     #article-prisma{
-        min-width: 90%;
-        
+        min-width: 88%;
+    
     }
 
     #article-prisma h1{
@@ -154,7 +155,9 @@ body{
     }
 
     #volume-prisma{
-        min-width: 334px;
-        margin: 15px 10px;
+       width: 370px;
+       margin: 15px auto;
     }
+
+
 }
