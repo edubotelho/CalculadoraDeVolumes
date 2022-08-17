@@ -158,6 +158,37 @@ body{
        width: 370px;
        margin: 15px auto;
     }
+}
 
+@media screen and (min-width:2000px){
+    .box1{
+        max-width: 2800px;
+        margin: 0 auto;
+    }
 
+    #article-prisma>h1{
+        font-size: 4.5rem;
+    }
+    #article-prisma>p{
+        font-size: 1.5em;
+    }
+
+    #volume-prisma{
+        width: 800px;
+        height: 900px;
+    }
+
+    #volume-prisma>h2{
+      font-size: 3em;
+      padding:1.8rem auto;
+    }
+
+    #valores{
+        width: 700px;
+        margin: 2.5rem auto;
+    }
+
+    #valores>input::placeholder{
+        font-size: 2rem;
+    }
 }
