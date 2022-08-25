@@ -28,12 +28,12 @@
         max-width: 100%;
     }
 
-    #article-cilindro{
+    .article-cilindro{
         min-width: 88%;
     
     }
 
-    #article-cilindro h1{
+    .article-cilindro h1{
         font-size:150%;
     }
 
