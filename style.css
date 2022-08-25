@@ -138,57 +138,101 @@ body{
     border: 2px solid #f0f8ffb6;
 }
 
-@media screen and (max-width:1200px){
-    .box1{
-        flex-direction: column;
-        height: auto;
-        max-width: 100%;
-    }
+/*-----------------PtCilindro-------------------*/
 
-    #article-prisma{
-        min-width: 88%;
+.box2{
+    display: flex;
+    height: 100vh;
     
-    }
-
-    #article-prisma h1{
-        font-size:150%;
-    }
-
-    #volume-prisma{
-       width: 370px;
-       margin: 15px auto;
-    }
 }
 
-@media screen and (min-width:2000px){
-    .box1{
-        max-width: 2800px;
-        margin: 0 auto;
-    }
+.article-cilindro{
+    width: 50%;
+    margin: 2% 12% 5% 2%;
+    font-size: 25px;
+    color:rgba(201, 201, 201, 0.918) ;
+}
 
-    #article-prisma>h1{
-        font-size: 4.5rem;
-    }
-    #article-prisma>p{
-        font-size: 1.5em;
-    }
+.article-cilindro p {
+    padding: 10px 0 0 15px;
+}
 
-    #volume-prisma{
-        width: 800px;
-        height: 900px;
-    }
+.article-cilindro h2{
+    font-family: 'calculaterFont',Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin: 18px 0 8px 15px;
+    color: var(--corPrincipal);
+    text-shadow: 0.5px 0.5px 10px var(--corPrincipal);
+    text-transform: uppercase;
+}
 
-    #volume-prisma>h2{
-      font-size: 3em;
-      padding:1.8rem auto;
-    }
+.article-cilindro>p>strong{
+    font-size: 27px;
+}
 
-    #valores{
-        width: 700px;
-        margin: 2.5rem auto;
-    }
+#volume-cilindro{
+    background-color: #1c1d1f;
+    display: flex;
+    height: 525px;
+    flex-direction:column;
+    gap: 1.5em;
+    margin: 5% 0 1% -2%;
 
-    #valores>input::placeholder{
-        font-size: 2rem;
-    }
+    border: 2px solid #f0f8ffb6;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px black;
+}
+
+#volume-cilindro>h2{
+    font-family: 'calculaterFont',Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: var(--corPrincipal);
+    text-shadow: 1px 1px 10px var(--corPrincipal);
+    padding: 1.2em 0 2px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#valores-cilindro{
+    width: 350px;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    gap: 1.2em;
+
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+#valores-cilindro input{
+    display: inline;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'calculaterFont',Arial,sans-serif;
+    color: var(--corPrincipal);
+    text-shadow: 0.5px 0.5px 10px var(--corPrincipal);
+    padding-left: 10px;
+    min-width: 310px;
+    background-color: #303131c5;
+    border: 2px solid #f0f8ffb6;
+}
+
+#valores-cilindro>input::placeholder{
+    padding-left:18px;
+    font-family: 'calculaterFont',arial,sans-serif;
+    font-size: 22px;
+    color:var(--corPrincipal);
+    text-shadow:0.2px 0.2px 10px var(--corPrincipal);
+
+}
+
+#resCilindro{
+    background-color: rgba(66, 66, 66, 0.836);
+    width: 320px;
+    height: 50px;
+    margin: 15px auto;
+    padding: 25px 0 0 0;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #f0f8ffb6;
 }

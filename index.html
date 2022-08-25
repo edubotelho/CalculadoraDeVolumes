@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleAdaptive.css">
     <title>Calculando Volume</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
         
             </div>
 
-            <input id="botao" type="button" value="Enviar" onclick="calculate()">
+            <input id="botao" type="button" value="Calcular" onclick="calculate()">
             <div id="res">
         
             </div>
@@ -48,7 +49,40 @@
         </section>
 
     </div>
+    
+    <div class="box2">
 
+        <article class="article-cilindro">
+            <h2>Calculando volume de cilindros</h2>
+            <p>Para calcular o volume de um prisma usamos a seguinte formúla:<br><br>
+                V=π.r².h
+                <br><br>
+            <strong>Como calcula o raio do cilindro?</strong><br>
+                O raio do cilindro é a distância entre o centro da figura e a extremidade. Sendo assim, o diâmetro equivale duas vezes o raio (d=2r).
+            </p>
+        </article>
+
+        <section id="volume-cilindro">
+
+            <h2>Volume de cilindros</h2>
+
+            <div id="valores-cilindro">
+               <div id="pi">Valor de π(PI): 3,1416...</div>
+        
+                <input id="valorR" placeholder="Valor do Raio(r):" type="number">
+                
+               <input id="valorAlt" placeholder="Valor da Altura(h)"  type="number">
+        
+            </div>
+
+            <input id="botao" type="button" value="Calcular" onclick="calculaCilindro()" >
+            <div id="resCilindro">
+        
+            </div>
+            
+        </section>
+
+    </div>
 
     <script src="script.js"></script>
 
